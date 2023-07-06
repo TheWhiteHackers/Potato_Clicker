@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&family=Geologica&family=Montserrat:wght@500&family=Narnoor&family=Rubik&display=swap');
+body{
+    font-family: 'Narnoor', serif;
+}
 h1{
     font-size: 50px;
+}
+#contain{
+    border: 1px solid red;
+    width: 39%;
+    float: left;
+    text-align: center;
+}
+#power{
+    border: 1px solid cyan;
+    float: left;
+    width: 30%;
+    height: 350px;
+}
+#newclick{
+    border: 1px solid purple;
+    float: left;
+    width: 30%;
+}
+#scorecon{
+    font-size: 50px;
+    border: 1px solid greenyellow;
+    height: 70px;
+    clear: both;
+    line-height: 50px;
+    text-align: center;
 }
