@@ -53,10 +53,11 @@
     <div id="newclick">
         <h2>Buy</h2>
 
-        <div id="farmer" class="buyingboxes">
+        <div id="farmer" class="buyingboxes" onclick="buyitem(0)">
             <h4>Farmer</h4>
-            <img src="./pics/farmer.png" alt="farmer" height="50px" width="50px" onclick="farmer()">
+            <img src="./pics/farmer.png" alt="farmer" height="50px" width="50px" >
             <h5 id="farmervalue">$50</h5>
+
             <h5>Inc by 1</h5>
         </div>
         <div id="animals" class="buyingboxes">
@@ -65,7 +66,7 @@
             <h5 class="value">$150</h5>
             <h5>Auto 0.5 per sec</h5>
         </div>
-        <div id="farm" class="buyingboxes">
+        <div id="farm" class="buyingboxes" onclick="buyitem(2)">
             <h4>Farm</h4>
             <img src="./pics/farm.png" alt="farm" height="50px" width="50px">
             <h5 class="value">$270</h5>

@@ -44,6 +44,9 @@ h1{
     line-height: 2px;
     width: 30%;
 }
+.buyingboxes:hover{
+    background-color: rgb(219, 219, 219);
+}
 .powerboxes{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 2px;
@@ -52,6 +55,9 @@ h1{
     margin: 4px;
     line-height: 2px;
     width: 30%;
+}
+.powerboxes:hover{
+    background-color: rgb(219, 219, 219);
 }
 #floater{
     float: left;
