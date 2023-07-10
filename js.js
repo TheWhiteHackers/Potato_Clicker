@@ -13,3 +13,7 @@ function increasescore(id, inc){
     thescore.innerHTML="$"+counter;
 
 }
+
+function challed(){
+    
+}

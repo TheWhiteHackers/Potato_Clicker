@@ -16,6 +16,7 @@ h1{
     float: left;
     width: 30%;
     height: 350px;
+    text-align: center;
 }
 #newclick{
     text-align: center;
@@ -43,7 +44,20 @@ h1{
     line-height: 2px;
     width: 30%;
 }
+.powerboxes{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    text-align: center;
+    float: left;
+    margin: 4px;
+    line-height: 2px;
+    width: 30%;
+}
 #floater{
     float: left;
     width: 39%;
+}
+#chall{
+    margin-bottom: -115px;
+    margin-left: 30px;
 }
