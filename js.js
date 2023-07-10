@@ -1,8 +1,8 @@
 let buylist = [
-    ["farmer", 10, 1],
-    ["animals", 150],
-    ["farm", 20, 5],
-    ["farm2", 350]
+    ["farmer", 50, 1],
+    ["animals", 150, 0],
+    ["farm", 270, 5],
+    ["farm2", 350, 0]
 ]
 let powerlist = [
     ["rebirth", 1000000],
@@ -31,7 +31,7 @@ function buyitem(id){
     console.log(buylist[id][1]);
 
     if (counter >= buylist[id][1]){
-        incval += 
+        incval += buylist[id][2];
         counter = counter-buylist[id][1] 
         console.log(counter);
     } else {
