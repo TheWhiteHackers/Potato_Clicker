@@ -15,6 +15,7 @@ window.onload=start();
 function start(){
     increasescore()
     document.getElementById("nomoney").style.display='none';
+    document.getElementById("shadow").style.display='none';
 }
 
 function increasescore(id, inc){
@@ -38,9 +39,14 @@ function buyitem(id){
         document.getElementById("farmervalue").innerHTML="$"+buylist[id][1];
         console.log(counter);
     } else {
-        document.getElementById("nomoney").style.display='none';
+        document.getElementById("nomoney").style.display='block';
+        document.getElementById("shadow").style.display='block';
     }
    
     document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
     thescore.innerHTML="$"+counter;
+}
+function okayclose(){
+    document.getElementById("nomoney").style.display='none';
+    document.getElementById("shadow").style.display='none';
 }

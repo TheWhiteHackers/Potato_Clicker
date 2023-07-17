@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&family=Geologica&family=Montserrat:wght@500&family=Narnoor&family=Rubik&display=swap');
 body{
     font-family: 'Narnoor', serif;
+    margin-top: -25px;
 }
 h1{
     font-size: 50px;
@@ -73,7 +74,40 @@ h1{
     margin-left: 30px;
 }
 #nomoney{
-    border: 10px solid goldenrod;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
     width: 500px;
-    height: 400px;
+    height: 350px;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -175px;
+    z-index: 10001;
+    text-align: center;
+}
+#closebutton{
+    height: 25px;
+    width: 75px;
+    border: none;
+    background-color: rgb(214, 255, 196);
+    font-family: 'Narnoor', serif;
+    font-weight: 600;
+    text-align: center;
+}
+#closebutton:hover{
+    background-color: rgb(149, 180, 138);
+}
+#shadow{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.775);
+    z-index: 1000;
 }
