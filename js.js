@@ -16,6 +16,7 @@ function start(){
     increasescore()
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='none';
+    document.getElementById("challcon").style.display='none';
 }
 
 function increasescore(id, inc){
@@ -46,7 +47,13 @@ function buyitem(id){
     document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
     thescore.innerHTML="$"+counter;
 }
-function okayclose(){
+function closebtn(){
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='none';
+    document.getElementById("shadow").style.display='none';
+    document.getElementById("challcon").style.display='none';
+}
+function challed(){
+    document.getElementById("shadow").style.display='block';
+    document.getElementById("challcon").style.display='block';
 }
