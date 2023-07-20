@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="shadow"></div>
-
+<!-- CHALLENGE -->
     <img src="./pics/death.png" alt="challenges" height="75px" width="75px" id="chall" onclick="challed()">
     <div id="challcon">
         <h2>Welcome to Challenges</h2>
@@ -18,27 +18,38 @@
         <div class="challbox">
             <h3>cool</h3>
             <p>123</p>
+            <div class="floatr">
+                <input type="button" value="I'll Try" id="chal1">
+            </div>
         </div>
         <div class="challbox">
             <h3>awesome</h3>
             <p>456</p>
+            <div class="floatr">
+                <input type="button" value="Glup...Okay" id="chal1">
+            </div>
         </div>
         <div class="challbox">
             <h3>amazing</h3>
             <p>789</p>
+            <div class="floatr">
+                <input type="button" value="Bring It On" id="chal1">
+            </div>
         </div>
-        <input type="button" value="I can't cause I'm scared" onclick="closebtn()">
+        <input type="button" value="I can't cause I'm scared" onclick="closebtn()" id="challbtn">
         </center>
     </div>
-
+<!-- CHALLENGE END -->
    
     
-
+<!-- TITLE -->
     <center>
         <h1>Potato Clicker</h1>
         <h2 id="incvalscreen">Clicker Value: 1</h2>
     </center>
+<!-- TITLE END -->
 
+<!-- INSUFFICIENT FUNDS -->
     <div id="nomoney">
         <div class="words">Potato Master Says:</div>
         <div class="words">It Looks Like Your Broke...</div>
@@ -51,7 +62,9 @@
 
         <input type="button" value="steal..." id="steal">
     </div>
+<!-- INSUFFICIENT FUNDS END -->
 
+<!-- POWER-UPS -->
     <div id="power">
         <h2>Power-Ups</h2>
         <div id="rebirth" class="powerboxes">
@@ -73,7 +86,9 @@
             <h5>Money X2 - 10 sec</h5>
         </div>
     </div>
+<!-- POWER-UPS END -->
 
+<!-- THE POTATO IN THE MIDDLE -->
     <div id="floater">
     <div id="contain">
         <img src="./pics/potato.png" alt="potato" height="250px" width="250px" onclick="increasescore()" id="1">
@@ -85,36 +100,39 @@
     </div>
     </div>
     <!-- ^^ this is the floaters div -->
-    
+<!-- THE POTATO IN THE MIDDLE END -->
+
+<!-- BUY -->
     <div id="newclick">
         <h2>Buy</h2>
 
         <div id="farmer" class="buyingboxes" onclick="buyitem(0)">
             <h4>Farmer</h4>
             <img src="./pics/farmer.png" alt="farmer" height="50px" width="50px" >
-            <h5 id="itemval1">$50</h5>
+            <h5 id="farmerval">$50</h5>
 
             <h5>Inc by 1</h5>
         </div>
         <div id="animals" class="buyingboxes">
             <h4>Animals</h4>
             <img src="./pics/livestock.png" alt="animals" height="50px" width="50px">
-            <h5 class="value">$150</h5>
+            <h5 class="animalval">$150</h5>
             <h5>Auto 0.5 per sec</h5>
         </div>
         <div id="farm" class="buyingboxes" onclick="buyitem(2)">
             <h4>Farm</h4>
             <img src="./pics/farm.png" alt="farm" height="50px" width="50px">
-            <h5 class="value">$270</h5>
+            <h5 class="farmval">$270</h5>
             <h5>Inc by 5</h5>
         </div>
         <div id="farm2" class="buyingboxes">
             <h4>Farm 2</h4>
             <img src="./pics/barn.png" alt="farm2" height="50px" width="50px">
-            <h5 class="value">$350</h5>
+            <h5 class="farm2val">$350</h5>
             <h5>Auto 1 per sec</h5>
         </div>
     </div>
+<!-- BUY ENDS -->
 
     <!-- <a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Freepik - Flaticon</a> -->
     <!-- <a href="https://www.flaticon.com/free-icons/race" title="race icons">Race icons created by Freepik - Flaticon</a> -->

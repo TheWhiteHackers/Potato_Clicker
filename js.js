@@ -1,8 +1,8 @@
 let buylist = [
-    ["farmer", 10, 1],
-    ["animals", 150, 0],
-    ["farm", 270, 5],
-    ["farm2", 350, 0]
+    ["farmer", 10, 1, "farmerval"],
+    ["animals", 150, 0, "animalval"],
+    ["farm", 100, 5, "farmval"],
+    ["farm2", 350, 0, "farm2val"]
 ]
 let powerlist = [
     ["rebirth", 1000000],
@@ -26,7 +26,6 @@ function increasescore(id, inc){
     console.log(counter);
 
     thescore.innerHTML="$"+counter;
-
 }
 
 function buyitem(id){
@@ -36,8 +35,8 @@ function buyitem(id){
     if (counter >= buylist[id][1]){
         incval += buylist[id][2];
         counter = counter-buylist[id][1];
-        buylist[id][1] += 10;
-        document.getElementById("farmervalue").innerHTML="$"+buylist[id][1];
+        buylist[id][1] += 5;
+        document.getElementById(buylist[id][3]).innerHTML="$"+buylist[id][1];
         console.log(counter);
     } else {
         document.getElementById("nomoney").style.display='block';
