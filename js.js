@@ -19,6 +19,7 @@ function start(){
     document.getElementById("shadow").style.display='none';
     document.getElementById("challcon").style.display='none';
     document.getElementById("credbox").style.display='none';
+    document.getElementById("soyousteal").style.display='none';
 }
 
 function increasescore(id, inc){
@@ -36,7 +37,7 @@ function increasescore(id, inc){
 function buyitem(id){
     const thescore = document.getElementById("finalscore");
     console.log(buylist[id][1]);
-    
+
 
     if (counter >= buylist[id][1]){
         incval += buylist[id][2];
@@ -46,8 +47,7 @@ function buyitem(id){
         console.log(counter);
     } else {
         document.getElementById("nomoney").style.display='block';
-        document.getElementById("shadow").style.display='block';
-    }
+        }
    
     document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
     thescore.innerHTML="$"+counter;
@@ -75,4 +75,8 @@ function challed(){
 function opencred(){
     document.getElementById("shadow").style.display='block';
     document.getElementById("credbox").style.display='block';
+}
+function opensteal(){
+    document.getElementById("shadow").style.display='block';
+    document.getElementById("steal").style.display='block';
 }

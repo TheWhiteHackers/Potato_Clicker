@@ -75,19 +75,32 @@ h1{
     margin-left: 30px;
 }
 #nomoney{
-    padding: 20px;
+    border: 3px solid rgb(213, 97, 74);
+    border-radius: 2px;
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 500px;
-    height: 350px;
-    left: 50%;
-    margin-left: -250px;
-    top: 50%;
-    margin-top: -175px;
+    width: 350px;
+    height: 80px;
+    right: 10px;
+    top: 10px;
     z-index: 10001;
     text-align: center;
+}
+.words{
+    float: left;
+    font-size: 15px;
+    margin-left: 10px;
+}
+#steal{
+    border: none;
+    background-color: rgb(250, 250, 250);
+    font-size: 7px;
+    color: rgb(236, 236, 236);
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
 }
 #closebutton{
     height: 30px;
@@ -101,10 +114,6 @@ h1{
 }
 #closebutton:hover{
     background-color: rgb(149, 180, 138);
-}
-#steal{
-    bottom: 0px;
-    left: 0px;
 }
 #shadow{
     position: absolute;
@@ -165,6 +174,10 @@ h1{
     height: 30px;
     width: 180px;
     font-weight: 600;
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    margin-top: 10px;
 }
 .floatr{
     float: right;
