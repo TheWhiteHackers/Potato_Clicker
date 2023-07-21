@@ -17,6 +17,7 @@ function start(){
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='none';
     document.getElementById("challcon").style.display='none';
+    document.getElementById("credbox").style.display='none';
 }
 
 function increasescore(id, inc){
@@ -51,8 +52,13 @@ function closebtn(){
     document.getElementById("shadow").style.display='none';
     document.getElementById("shadow").style.display='none';
     document.getElementById("challcon").style.display='none';
+    document.getElementById("credbox").style.display='none';
 }
 function challed(){
     document.getElementById("shadow").style.display='block';
     document.getElementById("challcon").style.display='block';
+}
+function opencred(){
+    document.getElementById("shadow").style.display='block';
+    document.getElementById("credbox").style.display='block';
 }
