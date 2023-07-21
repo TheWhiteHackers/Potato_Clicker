@@ -1,6 +1,6 @@
 let buylist = [
     ["farmer", 10, 1, "farmerval"],
-    ["animals", 150, 0, "animalval"],
+    ["animals", 15, 0, "animalval"],
     ["farm", 100, 5, "farmval"],
     ["farm2", 350, 0, "farm2val"]
 ]
@@ -11,6 +11,7 @@ let powerlist = [
 ]
 let counter = -1;
 let incval = 1;
+let autorate = 0;
 window.onload=start();
 function start(){
     increasescore()
@@ -21,17 +22,21 @@ function start(){
 }
 
 function increasescore(id, inc){
+//money
     const thescore = document.getElementById("finalscore");
-    
     counter += incval;
     console.log(counter);
-
     thescore.innerHTML="$"+counter;
+
+//auto
+    const autoscore = document.getElementById("scoreauto");
+    autoscore.innerHTML="Auto: "+autorate+" per sec";
 }
 
 function buyitem(id){
     const thescore = document.getElementById("finalscore");
     console.log(buylist[id][1]);
+    
 
     if (counter >= buylist[id][1]){
         incval += buylist[id][2];
@@ -46,6 +51,15 @@ function buyitem(id){
    
     document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
     thescore.innerHTML="$"+counter;
+}
+function autoclick(id){
+
+    if(counter >= buylist[id][1]){
+        autorate += buylist[id][2];
+       // buylist[id][1] += 5;
+    } else {
+        alert("no money");
+    }
 }
 function closebtn(){
     document.getElementById("nomoney").style.display='none';
