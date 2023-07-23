@@ -23,36 +23,27 @@ function start(){
     document.getElementById("credbox").style.display='none';
     document.getElementById("soyousteal").style.display='none';
 }
+
 function increasescore(id, inc){
-//money
     const thescore = document.getElementById("finalscore");
     counter += incval;
-    console.log(counter);
     thescore.innerHTML="$"+counter;
-
-//auto
-    // const autoscore = document.getElementById("scoreauto");
-    // autoscore.innerHTML="Auto: "+autoincval+" per sec";
 }
 
 function buyitem(id){
     const thescore = document.getElementById("finalscore");
-    console.log(buylist[id][1]);
-
     if (counter >= buylist[id][1]){
         incval += buylist[id][2];
         counter = counter-buylist[id][1];
         buylist[id][1] += 5;
         document.getElementById(buylist[id][3]).innerHTML="$"+buylist[id][1];
-        console.log(counter);
+        document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
+        thescore.innerHTML="$"+counter;
     } else {
         document.getElementById("nomoney").style.display='block';
     }
-
-    document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
-    thescore.innerHTML="$"+counter;
 }
-//--------------------------------------
+
 function autoclick(id){
     const thescore = document.getElementById("finalscore");
     if(counter >= buylist[id][1]){        
@@ -60,25 +51,23 @@ function autoclick(id){
         counter = counter - buylist[id][1];
         buylist[id][1] += 5;
         document.getElementById(buylist[id][3]).innerHTML="$"+buylist[id][1];
+        document.getElementById("scoreauto").innerHTML="Auto: "+autoincval+" per sec";
+        thescore.innerHTML="$"+counter;
+        increaseauto();
     } else {
         document.getElementById("nomoney").style.display='block';
     }
-    
-    document.getElementById("scoreauto").innerHTML="Auto: "+autoincval+" per sec";
-    thescore.innerHTML="$"+counter;
-    console.log("the autoincval="+autoincval);
 }
-//-----------------------------------------
+
 function increaseauto(){
     const thescore = document.getElementById("finalscore");
-
-    setTimeout(1000);
-    counter += autoincval;    
-
+    counter += autoincval;   
+    thescore.innerHTML="$"+counter;
+    clearTimeout(autotimer);
+    autotimer = setTimeout(() => {
+        increaseauto();
+      }, "1000");  
 }
-
-
-
 
 function closebtn(){
     document.getElementById("nomoney").style.display='none';
@@ -87,19 +76,23 @@ function closebtn(){
     document.getElementById("credbox").style.display='none';
     document.getElementById("soyousteal").style.display='none';
 }
+
 function challed(){
     document.getElementById("shadow").style.display='block';
     document.getElementById("challcon").style.display='block';
 }
+
 function opencred(){
     document.getElementById("shadow").style.display='block';
     document.getElementById("credbox").style.display='block';
 }
+
 function opensteal(){
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='block';
     document.getElementById("soyousteal").style.display='block';
 }
+
 function moneytree(){
 
 }
