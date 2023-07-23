@@ -11,9 +11,10 @@ let powerlist = [
 ]
 let counter = -1;
 let incval = 1;
-let autocounter = 0;
+let autotimer;
 let autoincval = 0;
 window.onload=start();
+
 function start(){
     increasescore()
     document.getElementById("nomoney").style.display='none';
@@ -30,9 +31,8 @@ function increasescore(id, inc){
     thescore.innerHTML="$"+counter;
 
 //auto
-    const autoscore = document.getElementById("scoreauto");
-    
-    autoscore.innerHTML="Auto: "+autocounter+" per sec";
+    // const autoscore = document.getElementById("scoreauto");
+    // autoscore.innerHTML="Auto: "+autoincval+" per sec";
 }
 
 function buyitem(id){
@@ -48,26 +48,38 @@ function buyitem(id){
     } else {
         document.getElementById("nomoney").style.display='block';
     }
-   
+
     document.getElementById("incvalscreen").innerHTML="Clicker Value: "+incval;
     thescore.innerHTML="$"+counter;
 }
 //--------------------------------------
 function autoclick(id){
-
-    if(counter >= buylist[id][1]){
+    const thescore = document.getElementById("finalscore");
+    if(counter >= buylist[id][1]){        
         autoincval += buylist[id][2];
-        counter = counter-buylist[id][1];
+        counter = counter - buylist[id][1];
         buylist[id][1] += 5;
         document.getElementById(buylist[id][3]).innerHTML="$"+buylist[id][1];
     } else {
         document.getElementById("nomoney").style.display='block';
     }
-
-    console.log("SUP");
+    
     document.getElementById("scoreauto").innerHTML="Auto: "+autoincval+" per sec";
+    thescore.innerHTML="$"+counter;
+    console.log("the autoincval="+autoincval);
 }
 //-----------------------------------------
+function increaseauto(){
+    const thescore = document.getElementById("finalscore");
+
+    setTimeout(1000);
+    counter += autoincval;    
+
+}
+
+
+
+
 function closebtn(){
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='none';
@@ -87,4 +99,7 @@ function opensteal(){
     document.getElementById("nomoney").style.display='none';
     document.getElementById("shadow").style.display='block';
     document.getElementById("soyousteal").style.display='block';
+}
+function moneytree(){
+
 }
