@@ -9,7 +9,7 @@ h1{
 #contain{
     border: 1px solid red;
     width: 100%;
-    height: 270px;
+    height: 280px;
     text-align: center;
 }
 #power{
@@ -19,6 +19,10 @@ h1{
     height: 350px;
     text-align: center;
     overflow-y: auto;
+
+    /* border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(139, 25, 0), rgb(231, 214, 23)) 1; */
 }
 #newclick{
     text-align: center;
@@ -30,7 +34,7 @@ h1{
 }
 #scorecon{
     font-size: 50px;
-    border: 1px solid greenyellow;
+    border: 0px solid greenyellow;
     height: 80px;
     line-height: 50px;
     text-align: center;
@@ -39,7 +43,12 @@ h1{
 }
 #scoreauto{
     font-size: 20px;
+    margin-top: 0px;
     border: 0px solid orange;
+}
+#storage{
+    font-size: 20px;
+    margin-top: -20px;
 }
 .buyingboxes{
     border: 2px solid rgb(0, 0, 0);
@@ -221,6 +230,7 @@ h1{
 }
 #credbox button{
     border: 3px solid rgb(124, 35, 206);
+    color: rgb(124, 35, 206);
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
     height: 30px;

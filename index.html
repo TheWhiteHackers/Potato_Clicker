@@ -10,7 +10,7 @@
 <body>
     <div id="shadow"></div>
 <!-- CHALLENGE -->
-    <img src="./pics/death.png" alt="challenges" height="75px" width="75px" id="chall" onclick="challed()">
+    <img src="./pics/death.png" alt="challenges" height="75px" width="75px" id="chall" style="margin-top: -10px;" onclick="challed()">
     <div id="challcon">
         <h2>Welcome to Challenges</h2>
         <h3>pick one if you dare...</h3>
@@ -45,8 +45,8 @@
     
 <!-- TITLE -->
     <center>
-        <h1>Potato Clicker</h1>
-        <h2 id="incvalscreen">Clicker Value: 1</h2>
+        <h1 style="margin-bottom: 20px;">Potato Clicker</h1>
+        <h2 id="incvalscreen" style="margin-bottom: -5px;">Clicker Value: 1</h2>
     </center>
 <!-- TITLE END -->
 
@@ -127,6 +127,8 @@
     <div id="scorecon">
     <div id="finalscore">$0</div>
     <div id="scoreauto">Auto: 0 per sec</div>
+    <div id="storage">Storage: 5000 potatos</div>
+
     </div>
     </div>
     <!-- ^^ this is the floaters div -->
@@ -162,9 +164,15 @@
         </div>
         <div id="factory" class="buyingboxes" onclick="buyitem(4)">
             <h4>Factroy</h4>
-            <img src="./pics/barn.png" alt="farm2" height="50px" width="50px">
+            <img src="./pics/factory.png" alt="factory" height="50px" width="50px">
             <h5 id="factoryval">$500</h5>
             <h5>Inc by 10</h5>
+        </div>
+        <div id="silo" class="buyingboxes" onclick="">
+            <h4>Silo</h4>
+            <img src="./pics/silo-.png" alt="silo" height="50px" width="50px">
+            <h5 id="siloval">$1000</h5>
+            <h5>Storage +5000</h5>
         </div>
     </div>
 <!-- BUY ENDS -->
@@ -202,6 +210,8 @@
     <a href="https://www.flaticon.com/free-icons/chase" class="linked" title="chase icons">Chase icons created by Leremy - Flaticon</a>
     <br>
     <a href="https://www.flaticon.com/free-icons/factory" class="linked" title="factory icons">Factory icons created by Freepik - Flaticon</a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/silo" class="linked" title="silo icons">Silo icons created by Aranagraphics - Flaticon</a>
     <br>
 
     <button onclick="closebtn()">Cool...Okay Now Close</button>
