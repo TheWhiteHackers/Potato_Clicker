@@ -94,26 +94,26 @@
         <div id="rebirth" class="powerboxes">
             <h4>Rebirth</h4>
             <img src="./pics/leaf.png" alt="rebirth" height="50px" width="50px">
-            <h5 class="value">$1,000,000</h5>
+            <h5 id="rebirthval">$1,000,000</h5>
             <h5>Inc all by 200%</h5>
         </div>
         <div id="cornmaze" class="powerboxes">
             <h4>Corn Maze</h4>
             <img src="./pics/maze.png" alt="cornmaze" height="50px" width="50px">
-            <h5 class="value">$100</h5>
+            <h5 id="cornmazeval">$100</h5>
             <h5>Inc Farm 2 X0.5</h5>
         </div>
         <div id="sackrace" class="powerboxes">
             <h4>Sack Race</h4>
             <img src="./pics/sack-race.png" alt="sackrace" height="50px" width="50px">
-            <h5 class="value">$100</h5>
+            <h5 id="sackraceval">$100</h5>
             <h5>$$$ X2 - 10 sec</h5>
         </div>
-        <div id="sackrace" class="powerboxes">
-            <h4>Sack Race</h4>
-            <img src="./pics/sack-race.png" alt="sackrace" height="50px" width="50px">
-            <h5 class="value">$100</h5>
-            <h5>$$$ X2 - 10 sec</h5>
+        <div id="takeperson" class="powerboxes">
+            <h4>Steal Person</h4>
+            <img src="./pics/people.png" alt="sackrace" height="50px" width="50px">
+            <h5 class="value">$TheirLife</h5>
+            <h5>Inc by 1-10</h5>
         </div>
     </div>
 <!-- POWER-UPS END -->
@@ -160,6 +160,12 @@
             <h5 id="farm2val">$350</h5>
             <h5>Auto 1 per sec</h5>
         </div>
+        <div id="factory" class="buyingboxes" onclick="buyitem(4)">
+            <h4>Factroy</h4>
+            <img src="./pics/barn.png" alt="farm2" height="50px" width="50px">
+            <h5 id="factoryval">$500</h5>
+            <h5>Inc by 10</h5>
+        </div>
     </div>
 <!-- BUY ENDS -->
 
@@ -167,30 +173,35 @@
 <button onclick="opencred()" style="border: none; color: gray; right: 0px; bottom: 0px; position: absolute;">Picture Credits</button>
 
 <div id="credbox">
-    <h3>Pic Credits</h3>
-    <a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Freepik - Flaticon</a>
+    <h3 style="margin-top: -5px;">Pic Credits</h3>
+    <h4 style="margin-top: -10px; margin-bottom: 7px;">(hehe they look like they have been clicked before)</h4>
+    <a href="https://www.flaticon.com/free-icons/skull" class="linked" title="skull icons">Skull icons created by Freepik - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/race" title="race icons">Race icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/race" class="linked" title="race icons">Race icons created by Freepik - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/maze" title="maze icons">Maze icons created by Smashicons - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/maze" class="linked" title="maze icons">Maze icons created by Smashicons - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/leaf" title="leaf icons">Leaf icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/leaf" class="linked" title="leaf icons">Leaf icons created by Freepik - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/farm" title="farm icons">Farm icons created by ultimatearm - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/farm" class="linked" title="farm icons">Farm icons created by ultimatearm - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/farmer" title="farmer icons">Farmer icons created by max.icons - Flaticon</a>>
+    <a href="https://www.flaticon.com/free-icons/farmer" class="linked" title="farmer icons">Farmer icons created by max.icons - Flaticon </a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/potato" title="potato icons">Potato icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/potato" class="linked" title="potato icons">Potato icons created by Freepik - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/barn" title="barn icons">Barn icons created by photo3idea_studio - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/barn" class="linked" title="barn icons">Barn icons created by photo3idea_studio - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/animals" title="animals icons">Animals icons created by Eucalyp - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/animals" class="linked" title="animals icons">Animals icons created by Eucalyp - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/broke" title="broke icons">Broke icons created by amonrat rungreangfangsai - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/broke" class="linked" title="broke icons">Broke icons created by amonrat rungreangfangsai - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by vectaicon - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/close" class="linked" title="close icons">Close icons created by vectaicon - Flaticon</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/jail" title="jail icons">Jail icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/jail" class="linked" title="jail icons">Jail icons created by Freepik - Flaticon</a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/chase" class="linked" title="chase icons">Chase icons created by Leremy - Flaticon</a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/factory" class="linked" title="factory icons">Factory icons created by Freepik - Flaticon</a>
     <br>
 
     <button onclick="closebtn()">Cool...Okay Now Close</button>
