@@ -106,6 +106,20 @@ h1{
     font-size: 15px;
     margin-left: 10px;
 }
+#nostorage{
+    border: 3px solid rgb(213, 97, 74);
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    right: 10px;
+    top: 10px;
+    z-index: 10001;
+    text-align: center;
+}
 /* steal start*/
 #steal{
     border: none;
