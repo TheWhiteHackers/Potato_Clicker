@@ -6,6 +6,18 @@ body{
 h1{
     font-size: 50px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+::-webkit-scrollbar-thumb {
+    /* background: #886600; */
+    background-image: url(./pics/potatoskin.jpg);
+
+}
+::-webkit-scrollbar-track{
+    background-color: #eeeeee9f;
+}
 #contain{
     border: 0px solid red;
     width: 100%;
@@ -22,7 +34,7 @@ h1{
 
     border-width: 4px;
     border-style: solid;
-    border-image: linear-gradient(to right, rgb(139, 25, 0), rgb(231, 214, 23)) 1;
+    border-image: linear-gradient(to right, rgb(139, 25, 0), rgb(255, 72, 0)) 1;
 }
 #newclick{
     text-align: center;
@@ -34,7 +46,7 @@ h1{
     
     border-width: 4px;
     border-style: solid;
-    border-image: linear-gradient(to right, rgb(7, 255, 27), rgb(231, 214, 23)) 1;
+    border-image: linear-gradient(to right, rgb(7, 255, 27), rgb(204, 255, 0)) 1;
 }
 #scorecon{
     font-size: 50px;
@@ -185,7 +197,12 @@ h1{
     margin-top: -175px;
     z-index: 10001;
     text-align: center;
+    align-content: center;
     overflow-y: auto;
+
+    /* justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; */
 }
 .challbox{
     text-align: left;
@@ -196,6 +213,12 @@ h1{
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0px 0px 14px 3px rgba(0, 0, 0, 0.3);
     border-radius: 2px;
+}
+#challcon h3{
+    margin-top: 10px;
+}
+#challcon h2{
+    margin-bottom: 10px;
 }
 .challbox h3{
     border: 0px solid palegreen;
@@ -219,10 +242,9 @@ h1{
     height: 30px;
     width: 180px;
     font-weight: 600;
-    left: 50%;
-    margin-left: -90px;
-    position: absolute;
-    margin-top: 10px;
+    margin-left: 110px;
+    position: relative;
+    bottom: 3px;
 }
 .floatr{
     float: right;
@@ -255,9 +277,9 @@ h1{
     width: 180px;
     font-weight: 600;
     left: 50%;
-    margin-left: -90px;
-    position: absolute;
+    margin-left: 20px;
     margin-top: 15px;
+    bottom: 3px;
 }
 .linked{
     color: rgb(124, 35, 206);
